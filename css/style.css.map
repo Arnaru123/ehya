@@ -9,6 +9,7 @@
         "../sass/_settings.sass",
         "../sass/templates/_header.sass",
         "../sass/templates/_hero.sass",
+        "../sass/templates/_collection.sass",
         "../sass/_media.sass"
     ],
     "names": [],
