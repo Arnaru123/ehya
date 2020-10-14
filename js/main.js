@@ -23,11 +23,20 @@ $(document).ready(function () {
     bulletActiveClass: "reviews__bullet_active",
     },  
   });
+
   $(".reviews-slider").mouseenter(function() {
     reviewsSlider.autoplay.stop();    
   });
-
   $(".reviews-slider").mouseleave(function() {
     reviewsSlider.autoplay.start();    
-  });  
+  });
+  
+  var storySlider = new Swiper(".story-slider", {    
+    loop: true,
+    autoHeight: true,    
+    navigation: {
+      nextEl: ".story-slider__button_next",
+      prevEl: ".story-slider__button_prev",
+    },
+  });
 });

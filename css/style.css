@@ -922,6 +922,15 @@ li {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
   }
+  .trending__wrapper {
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .trending__card {
+    max-width: 280px;
+  }
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
@@ -930,7 +939,7 @@ li {
   }
   .navbar__container {
     width: 650px;
-    padding-bottom: 45px;
+    padding: 26px 0 45px;
   }
   .navbar__navigation {
     display: none;
@@ -940,7 +949,7 @@ li {
     height: 624px;
   }
   .hero__container {
-    padding: 8px 0 30px 0;
+    padding: 0 0 30px;
   }
   .hero__subtitle {
     margin-bottom: 26px;
@@ -963,13 +972,42 @@ li {
     margin-left: 6px;
   }
   .collection__item {
-    padding: 80px 0;
+    padding: 78px 0;
   }
   .collection__muse {
     margin-bottom: 34px;
   }
   .collection__text {
     margin-bottom: 22px;
+  }
+  .trending {
+    padding-bottom: 30px;
+  }
+  .trending-header {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 56px;
+  }
+  .trending__img {
+    margin-bottom: 20px;
+  }
+  .tabs {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 28px;
+  }
+  .reviews-slider {
+    width: 95%;
   }
 }
 
