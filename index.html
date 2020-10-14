@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -72,15 +73,15 @@
         </button>
         <ul class="hero-advantage">
           <li class="hero-advantage__item">
-            <img src="img/pay.svg" alt="" class="hero-avantage__img" />
+            <img src="img/pay.svg" alt="" class="hero__icon" />
             <span class="hero-advantage__text">Онлайн оплата</span>
           </li>
           <li class="hero-advantage__item">
-            <img src="img/guarantee.svg" alt="" class="hero-avantage__img" />
+            <img src="img/guarantee.svg" alt="" class="hero__icon" />
             <span class="hero-advantage__text">Гарантия</span>
           </li>
           <li class="hero-advantage__item">
-            <img src="img/quality.svg" alt="" class="hero-avantage__img" /><span
+            <img src="img/quality.svg" alt="" class="hero__icon" /><span
               class="hero-advantage__text"
               >Качество</span
             >
@@ -127,7 +128,7 @@
         </div>
         <!-- /.trending-header -->
         <ul class="content">                    
-          <div id="new" class="content__item trending__wrapper">
+          <li id="new" class="content__item trending__wrapper">
             <div class="trending__card">
               <div class="trending__img">
                 <img src="img/trends-1.png" alt="Minimalist Style" class="trending__img-item">
@@ -238,7 +239,7 @@
               <span class="trending__card_more-text">Смотреть<br>больше коллекций</span>
             </div>
             <!-- /.trending__card trending__card_more -->
-          </div>
+          </li>
           <!-- /.content__item trending__wrapper -->
           <li id="best" class="content__item">Лучшее</li>
           <li id="soon" class="content__item">Скоро</li>
@@ -248,7 +249,43 @@
       <!-- /.container -->
     </section>
     <!-- /.trending -->
+    <section class="reviews">
+      <div class="container">        
+        <div class="swiper-container reviews-slider">          
+          <div class="swiper-wrapper">            
+            <div class="swiper-slide reviews-slider__item">
+              <img src="img/quote-left.svg" class="reviews__icon">
+              <p class="reviews__text">Мне очень нравятся дизайн и стили, которые создает Ehya. Они такие разные и новаторские. Я покупала несколько раз из коллекций, и что мне нравится, это то, что они действительно неподвластны времени, а качество ткани просто превосходно. Я с нетерпением жду новых коллекций от сезона к сезону</p>
+              <span class="reviews__username">Алисия Пума - клиент Fashun</span>
+            </div>
+            <!-- /.swiper-slide -->
+            <div class="swiper-slide reviews-slider__item">
+              <img src="img/quote-left.svg" class="reviews__icon">
+              <p class="reviews__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquam quo voluptatem tempore dolor rem, sapiente atque earum, quibusdam qui quaerat officiis tempora excepturi. Optio, maiores? Dignissimos numquam dolorum facilis minima accusamus explicabo expedita. Illum a quos veniam eligendi earum dignissimos, doloribus pariatur cum quisquam perspiciatis sunt quod quia vitae!</p>
+              <span class="reviews__username">Валерий Аркадьевич - главный редактор журнала Spoon</span>
+            </div>
+            <div class="swiper-slide reviews-slider__item">
+              <img src="img/quote-left.svg" class="reviews__icon">
+              <p class="reviews__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deleniti rem velit odio porro, illo odit nostrum distinctio, optio minima aliquam praesentium debitis eius accusantium? Ut eveniet, at sapiente aperiam asperiores inventore ad doloribus sequi cupiditate exercitationem aliquid non ea incidunt ratione omnis quos ipsum rerum quibusdam cum repudiandae fuga quidem. Ullam, fugiat natus. Magni velit minima ipsum quis eos odit perspiciatis consectetur, aut reiciendis vitae incidunt deleniti ratione? Cum nisi officiis, sunt doloremque incidunt praesentium illum tenetur libero voluptatum consectetur necessitatibus cupiditate! Dolorum minus temporibus autem excepturi dicta, culpa accusamus aperiam a id molestias soluta, at quisquam, delectus aliquam?</p>
+              <span class="reviews__username">Танечка</span>
+            </div>            
+          </div>
+          <!-- /.swiper-wrapper -->          
+          <div class="swiper-pagination reviews__pagination"></div> 
+        </div>
+        <!-- /.swiper-container -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
+    <section class="story">
+
+    </section>
+    <!-- /.story -->
+
+
     <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

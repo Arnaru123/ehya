@@ -9,4 +9,25 @@ $(document).ready(function () {
     $(activeContent).addClass('content__item_active trending__wrapper');
     $(this).addClass('tabs__item_active');
   });
+
+  var reviewsSlider = new Swiper('.reviews-slider', {  
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  autoplay: {
+    delay: 7000,
+    },
+  pagination: {
+    el: '.reviews__pagination',
+    bulletClass: "reviews__bullet",
+    bulletActiveClass: "reviews__bullet_active",
+    },  
+  });
+  $(".reviews-slider").mouseenter(function() {
+    reviewsSlider.autoplay.stop();    
+  });
+
+  $(".reviews-slider").mouseleave(function() {
+    reviewsSlider.autoplay.start();    
+  });  
 });
