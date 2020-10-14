@@ -1,10 +1,36 @@
 .trending
+  &-header
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 48px
   &__wrapper
     display: flex
     flex-wrap: wrap
     justify-content: space-between
   &__card
     width: 260px
+    &_more
+      background: $secondary
+      border-radius: 8px
+      overflow: hidden
+      height: 350px
+      margin-bottom: 18px
+      display: flex
+      align-content: center
+      justify-content: center
+      flex-wrap: wrap
+      &-text
+        margin-top: 15px
+        flex-basis: 100%
+        font-family: HK Grotesk-bold
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        text-align: center
+        letter-spacing: 0.2px
+        color: $light-text
   &__img
     border-radius: 8px
     overflow: hidden

@@ -6,6 +6,9 @@ body
   width: 1140px
   margin: auto
   border: 1px solid red
+ul
+  padding: 0
+  margin: 0
 li
   list-style: none
 .link
@@ -15,6 +18,7 @@ li
   border: none
   background: $main
   border-radius: 8px
+  cursor: pointer
 .section-title
   margin: 0
   font-family: HK Grotesk-bold
@@ -24,3 +28,26 @@ li
   line-height: 60px
   letter-spacing: 0.2px
   color: $main
+.tabs
+  display: flex
+  align-items: center
+  &__item
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: $grey-text
+    cursor: pointer
+    &:not(:first-child)
+      margin-left: 38px
+    &_active
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      color: $main
+.content
+  &__item
+    display: none
+    &_active
+      display: block
