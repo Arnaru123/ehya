@@ -1,2 +1,31 @@
 .story
   padding-top: 80px
+  &__container
+    display: flex
+  &__content
+    flex-basis: 40%
+  &-slider
+    width: 662px
+    min-height: 475px
+    &__item
+      display: flex
+      justify-content: space-between
+      &_1,
+      &_2
+        position: relative
+        width: 322px
+        min-height: 475px
+    &__img
+      &_1,
+      &_2
+        position: absolute
+        top: 0
+        left: 0
+        width: 312px
+        height: 317px
+        border-radius: 8px 8px 0px 0px
+        overflow: hidden
+    &__image
+      width: 100%
+      height: 100%
+      object-fit: cover
