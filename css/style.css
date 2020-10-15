@@ -1155,6 +1155,45 @@ a:hover {
   color: #959EAD;
 }
 
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 263px (165px)[4];
+      grid-template-columns: 263px repeat(4, 165px);
+  grid-column-gap: 30px;
+  padding: 130px 0;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+}
+
+.footer__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #5A7184;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #183B56;
+}
+
+.footer__item:not(:first-child) {
+  margin-top: 24px;
+}
+
 @media (max-width: 1356px) {
   .container {
     max-width: 90%;
