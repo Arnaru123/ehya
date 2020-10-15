@@ -35,8 +35,8 @@ $(document).ready(function () {
     loop: true,
     autoHeight: true,    
     navigation: {
-      nextEl: ".story-slider__button_next",
-      prevEl: ".story-slider__button_prev",
+      nextEl: ".story__button_next",
+      prevEl: ".story__button_prev",
     },
   });
 });

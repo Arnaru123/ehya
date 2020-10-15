@@ -12,14 +12,20 @@ ul
   margin: 0
 li
   list-style: none
-.link
+.link,
+a
   text-decoration: none
   cursor: pointer
+  &:hover
+    color: red
 .button
   border: none
+  outline: none
   background: $main
   border-radius: 8px
   cursor: pointer
+  &:hover
+    background: $secondary
 .section-title
   margin: 0
   font-family: HK Grotesk-bold

@@ -41,8 +41,8 @@
                 <a href="#" class="link navbar-menu__link">Контакты</a>
               </li>
             </ul>
-            <a href="#" class="link user-login"
-              ><span class="user-login__text">Войти</span></a
+            <a href="#" class="user-login"
+              ><span class="link user-login__text">Войти</span></a
             >
           </div>
           <!-- /.navbar__navigation -->
@@ -127,8 +127,8 @@
               нажав кнопку ниже. Успейте купить, пока коллекция есть в наличии.
               Используйте код EHYA20, чтобы получить 20%&nbsp;скидку.
             </p>
-            <a href="#" class="link collection__link">
-              <span class="collection__span">Посмотреть коллекцию</span>
+            <a href="#" class="collection__link">
+              <span class="link collection__span">Посмотреть коллекцию</span>
               <img
                 src="img/arrow-icon.svg"
                 alt="Перейти"
@@ -321,14 +321,10 @@
             </div>
             <!-- /.trending__card -->
             <div class="button trending__card trending__card_more">
-              <img
-                src="img/plus.svg"
-                alt="Смотреть еще"
-                class="trending__card_more-icon"
-              />
-              <span class="trending__card_more-text"
-                >Смотреть<br />больше коллекций</span
-              >
+              <div class="trending__card_description">
+                <img src="img/plus.svg" alt="Смотреть еще" class="trending__card_more-icon" />
+                <span class="trending__card_more-text">Смотреть<br />больше коллекций</span>
+              </div>
             </div>
             <!-- /.trending__card trending__card_more -->
           </li>
@@ -343,10 +339,11 @@
     <!-- /.trending -->
     <section class="reviews">
       <div class="container">
+        <h2 class="reviews-title">Reviews</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide reviews-slider__item">
-              <img src="img/quote-left.svg" class="reviews__icon" />
+              <img src="img/quote-left.svg" alt="Reviews icon" class="reviews__icon" />
               <p class="reviews__text">
                 Мне очень нравятся дизайн и стили, которые создает Ehya. Они
                 такие разные и новаторские. Я покупала несколько раз из
@@ -358,7 +355,7 @@
             </div>
             <!-- /.swiper-slide -->
             <div class="swiper-slide reviews-slider__item">
-              <img src="img/quote-left.svg" class="reviews__icon" />
+              <img src="img/quote-left.svg" alt="Reviews icon" class="reviews__icon" />
               <p class="reviews__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
                 aliquam quo voluptatem tempore dolor rem, sapiente atque earum,
@@ -373,7 +370,7 @@
               >
             </div>
             <div class="swiper-slide reviews-slider__item">
-              <img src="img/quote-left.svg" class="reviews__icon" />
+              <img src="img/quote-left.svg" alt="Reviews icon" class="reviews__icon" />
               <p class="reviews__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Obcaecati deleniti rem velit odio porro, illo odit nostrum
@@ -409,6 +406,11 @@
             Ознакомьтесь с нашим рассказом о моде. Написано нашим дизайнером и
             специалистом.
           </p>
+          <div class="story__button">
+            <div class="story__button_prev"></div>
+            <div class="story__button_next"></div>
+          </div>
+          <!-- /.story__button -->
         </div>
         <!-- /.story__content -->
         <div class="swiper-container story-slider">
@@ -423,12 +425,15 @@
                   />
                 </div>
                 <!-- /.story-slider__img -->
-                <h3 class="story-slider__subtitle">
-                  Mix & Match Style 01: повседневный и формальный стиль
-                </h3>
-                <a href="#" class="link story-slider__link">
-                  <span class="story-slider__text">Читать далее</span>
-                </a>
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Mix & Match Style 01: повседневный и формальный стиль
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
               </div>
               <!-- /.story-slider__item_1 -->
               <div class="story-slider__item_2">
@@ -440,20 +445,91 @@
                   />
                 </div>
                 <!-- /.story-slider__img -->
-                <h3 class="story-slider__subtitle">
-                  Лайфхак: Купите одежду Thrifft на воскресном рынке
-                </h3>
-                <a href="#" class="link story-slider__link">
-                  <span class="story-slider__text">Читать далее</span>
-                </a>
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Лайфхак: Купите одежду Thrifft на воскресном рынке
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
+              </div>
+              <!-- /.story-slider__item_2 -->
+            </div>
+            <!-- /.swiper-slide story-slider__item -->
+            <div class="swiper-slide story-slider__item">
+              <div class="story-slider__item_1">
+                <div class="story-slider__img_1">
+                  <img src="img/muse-1.png" alt="Story-1" class="story-slider__image" />
+                </div>
+                <!-- /.story-slider__img -->
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Lorem ipsum dolor sit.
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
+              </div>
+              <!-- /.story-slider__item_1 -->
+              <div class="story-slider__item_2">
+                <div class="story-slider__img_2">
+                  <img src="img/trends-5.png" alt="Story-2" class="story-slider__image" />
+                </div>
+                <!-- /.story-slider__img -->
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
+              </div>
+              <!-- /.story-slider__item_2 -->
+            </div>
+            <!-- /.swiper-slide story-slider__item -->
+            <div class="swiper-slide story-slider__item">
+              <div class="story-slider__item_1">
+                <div class="story-slider__img_1">
+                  <img src="img/trends-3.png" alt="Story-1" class="story-slider__image" />
+                </div>
+                <!-- /.story-slider__img -->
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Lorem ipsum dolor sit amet.
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
+              </div>
+              <!-- /.story-slider__item_1 -->
+              <div class="story-slider__item_2">
+                <div class="story-slider__img_2">
+                  <img src="img/trends-4.png" alt="Story-2" class="story-slider__image" />
+                </div>
+                <!-- /.story-slider__img -->
+                <div class="story-slider__description">
+                  <h3 class="story-slider__subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, iure.
+                  </h3>
+                  <a href="#" class="story-slider__link">
+                    <span class="link story-slider__text">Читать далее</span>
+                  </a>
+                </div>
+                <!-- /.story-slider__description -->
               </div>
               <!-- /.story-slider__item_2 -->
             </div>
             <!-- /.swiper-slide story-slider__item -->
           </div>
-          <!-- /.swiper-wrapper -->
-          <div class="swiper-button-prev story-slider__button_prev"></div>
-          <div class="swiper-button-next story-slider__button_next"></div>
+          <!-- /.swiper-wrapper -->          
         </div>
         <!-- /.swiper-container story-slider -->
       </div>
