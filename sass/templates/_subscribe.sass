@@ -1,4 +1,49 @@
 .subscribe
   background-image: url(../img/subs-bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 100px 62px 100px 0
   &__title
     color: $light-text
+  &__subtitle
+    width: 436px
+    margin: 0
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+    color: $light-text
+  &__form
+    position: relative
+  &__button
+    position: absolute
+    right: 4px
+    top: 4px
+    padding: 11px 27px
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: $light-text
+  &__input
+    width: 447px
+    height: 56px
+    padding-left: 48px
+    padding-right: 186px
+    border-radius: 8px
+    border: 1px solid #C3CAD9
+    background-image: url(../img/mail-icon.svg)
+    background-repeat: no-repeat
+    background-position: 20px 50%
+    outline: none
+    &:placeholder
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: #959EAD

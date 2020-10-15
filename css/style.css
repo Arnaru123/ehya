@@ -1081,10 +1081,78 @@ a:hover {
 
 .subscribe {
   background-image: url(../img/subs-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.subscribe__wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 62px 100px 0;
 }
 
 .subscribe__title {
   color: #FFFFFF;
+}
+
+.subscribe__subtitle {
+  width: 436px;
+  margin: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+
+.subscribe__form {
+  position: relative;
+}
+
+.subscribe__button {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  padding: 11px 27px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.subscribe__input {
+  width: 447px;
+  height: 56px;
+  padding-left: 48px;
+  padding-right: 186px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid #C3CAD9;
+  background-image: url(../img/mail-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 20px 50%;
+  outline: none;
+}
+
+.subscribe__input:placeholder {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #959EAD;
 }
 
 @media (max-width: 1356px) {
