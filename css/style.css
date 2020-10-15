@@ -1079,6 +1079,14 @@ a:hover {
   background-image: url(../img/button-next.svg);
 }
 
+.subscribe {
+  background-image: url(../img/subs-bg.png);
+}
+
+.subscribe__title {
+  color: #FFFFFF;
+}
+
 @media (max-width: 1356px) {
   .container {
     max-width: 90%;
