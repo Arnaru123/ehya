@@ -1,8 +1,8 @@
 .footer
   &__wrapper
     display: grid
-    grid-template-columns: 263px repeat(4, 165px)
-    grid-column-gap: 30px
+    grid-template-columns: 23% repeat(3, 14%) 1fr
+    grid-column-gap: 3%
     padding: 130px 0
   &__title
     margin: 0
@@ -13,12 +13,13 @@
     line-height: 25px
     color: $main
   &__text
+    margin: 0
+    margin: 20px 0 30px
     font-style: normal
     font-weight: normal
     font-size: 16px
     line-height: 28px
     color: $grey-text
-
   &__item
     font-style: normal
     font-weight: normal
@@ -27,3 +28,6 @@
     color: $main
     &:not(:first-child)
       margin-top: 24px
+  &__links-item
+    &:not(:last-child)
+      margin-right: 3px
