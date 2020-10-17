@@ -35,10 +35,18 @@
     &__navigation
       display: none
     &__mobile
-      &-button
-        display: block
-    &_visible
-      display: block
+      &_visible
+        // display: block
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $main
   .hero
     &-bg
       width: 728px
