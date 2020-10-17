@@ -39,4 +39,37 @@ $(document).ready(function () {
       prevEl: ".story__button_prev",
     },
   });
+
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $(".modal__close");
+  var modalBg = $(".modal__bg");
+  var modal = $(".modal");
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
+  modalBg.on('click', closeModal);  
+
+  function openModal() {        
+    modal.addClass('modal_visible');
+    modalBg.addClass('modal__bg_closed');
+  }
+  function closeModal() {    
+    modal.removeClass('modal_visible');
+    modalBg.removeClass('modal__bg_closed');
+  }
+  $(document).keydown(function(e) {
+    if (e.keyCode == 27) {
+      modal.removeClass('modal_visible');
+      modalBg.removeClass('modal__bg_closed');
+    };
+  });
+  
+  $('.subscribe__form').validate({
+      errorClass: "error",
+      messages: {        
+        subscribe: {
+          required: "укажите почту",
+          email: "пример email адреса: name@domain.com",
+        },        
+      },
+    });
 });

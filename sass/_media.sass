@@ -34,15 +34,23 @@
       padding: 24px 0 45px
     &__navigation
       display: none
-    &__mobile
-      &_visible
-        // display: block
+  .modal
+    &_visible
+      display: block
+    &__bg
+      &_closed
+        display: block
   .menu
     &-button
       display: flex
       align-items: center
       justify-content: space-between
       flex-direction: column
+      height: 18px
+      padding: 0
+      border: none
+      background-color: transparent
+      cursor: pointer
       &__line
         width: 22px
         height: 2px
@@ -157,8 +165,31 @@
     &__mobile
       &-button
         display: block
+  .modal
     &_visible
       display: block
+      height: 95%
+    &__list
+      height: 150px
+      overflow-y: auto
+    &__bg
+      &_closed
+        display: block
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      height: 18px
+      padding: 0
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $main
   .hero
     &-bg
       width: 100%
@@ -294,8 +325,31 @@
     &__mobile
       &-button
         display: block
+  .modal
     &_visible
       display: block
+      height: 95%
+    &__list
+      height: 150px
+      overflow-y: auto
+    &__bg
+      &_closed
+        display: block
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      height: 18px
+      padding: 0
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $main
   .hero
     &-bg
       max-width: 100%
@@ -498,8 +552,9 @@
       width: 100%
       font-size: 16px
       line-height: 28px
-    &__input
+    &__form
       width: 282px
+    &__input
       height: 48px
       padding-right: 18px
     &__button
@@ -553,8 +608,29 @@
     &__mobile
       &-button
         display: block
+  .modal
     &_visible
       display: block
+    &__block
+      width: 100%
+    &__bg
+      &_closed
+        display: block
+  .menu
+    &-button
+      display: flex
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      height: 18px
+      padding: 0
+      border: none
+      background-color: transparent
+      cursor: pointer
+      &__line
+        width: 22px
+        height: 2px
+        background-color: $main
   .hero
     &-bg
       max-width: 100%
@@ -757,8 +833,9 @@
       width: 100%
       font-size: 16px
       line-height: 28px
-    &__input
+    &__form
       width: 282px
+    &__input
       height: 48px
       padding-right: 18px
     &__button
