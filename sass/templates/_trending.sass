@@ -12,6 +12,50 @@
   &__card
     width: 260px
     margin-bottom: 40px
+    &:nth-child(1) .trending__img
+      background-image: url(../img/trends-1.jpg)
+    &:nth-child(2) .trending__img
+      background-image: url(../img/trends-2.jpg)
+    &:nth-child(3) .trending__img
+      background-image: url(../img/trends-3.jpg)
+    &:nth-child(4) .trending__img
+      background-image: url(../img/trends-4.jpg)
+    &:nth-child(5) .trending__img
+      background-image: url(../img/trends-5.jpg)
+    &:nth-child(6) .trending__img
+      background-image: url(../img/trends-6.jpg)
+    &:nth-child(7) .trending__img
+      background-image: url(../img/trends-7.jpg)
+    &_best
+      &:nth-child(1) .trending__img
+        background-image: url(../img/trends-7.jpg)
+      &:nth-child(2) .trending__img
+        background-image: url(../img/trends-6.jpg)
+      &:nth-child(3) .trending__img
+        background-image: url(../img/trends-5.jpg)
+      &:nth-child(4) .trending__img
+        background-image: url(../img/trends-4.jpg)
+      &:nth-child(5) .trending__img
+        background-image: url(../img/trends-3.jpg)
+      &:nth-child(6) .trending__img
+        background-image: url(../img/trends-2.jpg)
+      &:nth-child(7) .trending__img
+        background-image: url(../img/trends-1.jpg)
+    &_soon
+      &:nth-child(1) .trending__img
+        background-image: url(../img/trends-5.jpg)
+      &:nth-child(2) .trending__img
+        background-image: url(../img/trends-3.jpg)
+      &:nth-child(3) .trending__img
+        background-image: url(../img/trends-6.jpg)
+      &:nth-child(4) .trending__img
+        background-image: url(../img/trends-1.jpg)
+      &:nth-child(5) .trending__img
+        background-image: url(../img/trends-2.jpg)
+      &:nth-child(6) .trending__img
+        background-image: url(../img/trends-7.jpg)
+      &:nth-child(7) .trending__img
+        background-image: url(../img/trends-4.jpg)
     &_description
       display: flex
       flex-direction: column
@@ -44,10 +88,9 @@
     overflow: hidden
     height: 350px
     margin-bottom: 22px
-    &-item
-      width: 100%
-      height: 100%
-      object-fit: cover
+    background-repeat: no-repeat
+    background-size: cover
+
   &__info
     padding: 0 10px 10px
     display: flex
