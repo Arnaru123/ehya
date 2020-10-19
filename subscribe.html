@@ -15,7 +15,7 @@
   <header class="navbar">
     <div class="container">
       <div class="navbar__wrapper">
-        <a href="index.html" class="navbar__link">
+        <a href="#" class="navbar__link">
           <img src="img/Logo.svg" alt="Ehya логотип" class="icon navbar__logo" />
         </a>
         <div class="navbar__navigation">
@@ -24,32 +24,34 @@
               <a href="#" class="link navbar-menu__link">Главная</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="link navbar-menu__link">Новинки</a>
+              <a href="#collection" class="link navbar-menu__link go-anchor">Новинки</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="link navbar-menu__link">Тренды</a>
+              <a href="#trending" class="link navbar-menu__link go-anchor">Тренды</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="link navbar-menu__link">Отзывы</a>
+              <a href="#reviews" class="link navbar-menu__link go-anchor">Отзывы</a>
             </li>
             <li class="navbar-menu__item">
-              <a href="#" class="link navbar-menu__link">Контакты</a>
+              <a href="#footer" class="link navbar-menu__link go-anchor">Контакты</a>
             </li>
           </ul>
-          <a href="#" class="user-login"><span class="link user-login__text">Войти</span></a>
+          <a href="#" class="user-login">
+            <span data-toggle="modal-logIn" class="link user-login__text">Войти</span>
+          </a>
         </div>
         <!-- /.navbar__navigation -->
-        <!-- <button class="menu-button navbar__menu-button">
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-            <span class="menu-button__line"></span>
-          </button> -->
+        <button data-toggle="modal" class="menu-button navbar__mobile-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
       </div>
-      <!-- /.navbar__container -->
+      <!-- /.navbar__wrapper -->
     </div>
     <!-- /.container -->
   </header>
-  <!-- /.header -->  
+  <!-- /.header -->
   <section class="subscribe">
     <div class="container">
       <div class="subscribe__wrapper">
@@ -67,11 +69,11 @@
     <!-- /.container -->
   </section>
   <!-- /.subscribe -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__link">
-          <a href="index.html" class="footer__link-logo">
+          <a href="#" class="footer__link-logo">
             <img src="img/Logo.svg" alt="Ehya логотип" class="icon footer__icon" />
           </a>
           <p class="footer__text">Интернет-магазин брендовой одежды с оплатой онлайн</p>
@@ -80,9 +82,9 @@
                 alt="Google" class="footer__links-icon"></a>
             <a href="https://twitter.com/?lang=ru" target="_blank" class="footer__links-item"><img src="img/tw.svg"
                 alt="Twitter" class="footer__links-icon"></a>
-            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="footer__links-item"><img
-                src="img/inst.svg" alt="Instagram" class="footer__links-icon"></a>
-            <a href="https://ru.linkedin.com" target="_blank" class="footer__links-item"><img src="img/in.svg"
+            <a href="https://www.instagram.com/?hl=ru" target="_blank" class="footer__links-item"><img src="img/inst.svg"
+                alt="Instagram" class="footer__links-icon"></a>
+            <a href="https://www.linkedin.com/" target="_blank" class="footer__links-item"><img src="img/in.svg"
                 alt="LinkedIn" class="footer__links-icon"></a>
           </div>
           <!-- /.footer__links -->
@@ -91,11 +93,11 @@
         <div class="navigation">
           <h3 class="footer__title">Навигация</h3>
           <ul class="footer__list">
-            <li class="footer__item"><a href="#" class="link footer__item">Новая коллекция</a></li>
-            <li class="footer__item"><a href="#" class="link footer__item">Трендовая одежда</a></li>
-            <li class="footer__item"><a href="#" class="link footer__item">Истории Fashun</a></li>
-            <li class="footer__item"><a href="#" class="link footer__item">Отзывы клиентов</a></li>
-            <li class="footer__item"><a href="#" class="link footer__item">Вся одежда</a></li>
+            <li class="footer__item"><a href="#collection" class="link footer__item go-anchor">Новая коллекция</a></li>
+            <li class="footer__item"><a href="#trending" class="link footer__item go-anchor">Трендовая одежда</a></li>
+            <li class="footer__item"><a href="#story" class="link footer__item go-anchor">Истории Fashun</a></li>
+            <li class="footer__item"><a href="#reviews" class="link footer__item go-anchor">Отзывы клиентов</a></li>
+            <li class="footer__item"><a href="#trending" class="link footer__item go-anchor">Вся одежда</a></li>
           </ul>
         </div>
         <!-- /.navigation -->
@@ -130,9 +132,57 @@
         <!-- /.contacts -->
       </div>
       <!-- /.footer__wrapper -->
+  
     </div>
     <!-- /.container -->
   </footer>
+  <!-- кнопка прокрутки -->
+  <a href="#" class="link button-up"><img src="img/arrow-icon.svg" alt="Наверх" class="button-up__icon"></a>
+  <!-- мобильное меню -->
+  <div class="navbar navbar__navigation modal">
+    <div class="modal__block">
+      <a href="#" class="modal__close"><img src="img/modal-close.svg" alt="Закрыть"></a>
+      <ul class="navbar-menu modal__list">
+        <li class="navbar-menu__item modal__item">
+          <a href="#" class="link navbar-menu__link">Главная</a>
+        </li>
+        <li class="navbar-menu__item modal__item">
+          <a href="#" class="link navbar-menu__link">Новинки</a>
+        </li>
+        <li class="navbar-menu__item modal__item">
+          <a href="#" class="link navbar-menu__link">Тренды</a>
+        </li>
+        <li class="navbar-menu__item modal__item">
+          <a href="#" class="link navbar-menu__link">Отзывы</a>
+        </li>
+        <li class="navbar-menu__item modal__item">
+          <a href="#" class="link navbar-menu__link">Контакты</a>
+        </li>
+      </ul>
+      <a href="#" class="user-login modal-login"><span data-toggle=modal-logIn
+          class="link user-login__text modal-login__text">Войти</span></a>
+    </div>
+    <!-- /.modal__block -->
+  </div>
+  <!-- /.navbar__navigation -->
+  <div class="modal modal__bg"></div>
+  <!-- /.modal_closed -->
+  <!-- окно входа -->
+  <div class="modal-logIn">
+    <div class="modal-logIn__block">
+      <a href="#" class="modal-logIn__close"><img src="img/modal-close.svg" alt="Закрыть"></a>
+      <form action="#" class="modal-logIn__form" name="user-login">
+        <input type="email" class="modal-logIn__email" placeholder="Ваш Emaill" name="email" required />
+        <input type="text" class="modal-logIn__name" placeholder="Ваш логин" name="username" minlength="4" required />
+      </form>
+      <a href="#" class="user-login modal-logIn__login"><span
+          class="link user-login__text modal-logIn__text">Войти</span></a>
+    </div>
+    <!-- /.modal-login__block -->
+  </div>
+  <!-- /.modal-login -->
+  <div class="modal-logIn_bg"></div>
+  <!-- /.modal-login__bg -->
 
   <script src="js/jquery-3.5.1.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

@@ -79,7 +79,7 @@ $(document).ready(function () {
   // окно входа
   var modalLoginButton = $('[data-toggle=modal-logIn]');
   var closeModalLoginButton = $(".modal-logIn__close");
-  var modalLoginBg = $(".modal-logIn__bg");
+  var modalLoginBg = $(".modal-logIn_bg");
   var modalLogin = $(".modal-logIn");
   modalLoginButton.on('click', openLogin);
   closeModalLoginButton.on('click', closeLogin);
@@ -87,16 +87,16 @@ $(document).ready(function () {
 
   function openLogin() {        
     modalLogin.addClass('modal-logIn_visible');
-    modalLoginBg.addClass('modal-logIn__bg_closed');
+    modalLoginBg.addClass('modal-logIn_bg-closed');
   }
   function closeLogin() {    
     modalLogin.removeClass('modal-logIn_visible');
-    modalLoginBg.removeClass('modal-logIn__bg_closed');
+    modalLoginBg.removeClass('modal-logIn_bg-closed');
   }
   $(document).keydown(function(e) {
     if (e.keyCode == 27) {
       modalLogin.removeClass('modal-logIn_visible');
-      modalLoginBg.removeClass('modal-logIn__bg_closed');
+      modalLoginBg.removeClass('modal-logIn_bg-closed');
     };
   });
   // валидатор форм
