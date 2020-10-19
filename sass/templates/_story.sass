@@ -5,8 +5,8 @@
     justify-content: space-between
     padding-top: 104px
   &__content
-    margin-right: 90px
-    flex-basis: 35%
+    margin-right: 150px
+    flex-basis: 32%
     position: relative
   &__span
     display: block
@@ -31,17 +31,17 @@
     line-height: 36px
     color: $grey-text
   &-slider
-    // width: 662px
     flex-basis: 60%
     min-height: 475px
     padding-top: 10px
     &__item
+      width: 675px
       display: flex
       justify-content: space-between
       &_1,
       &_2
         position: relative
-        width: 50%
+        width: 49%
         min-height: 475px
     &__img
       &_1,
@@ -87,13 +87,35 @@
     display: flex
     width: 132px
     justify-content: space-between
+    border: none
+    outline: none
     &_prev
       width: 56px
       height: 56px
       background-image: url(../img/button-prev.svg)
       background-repeat: no-repeat
+      &:active
+        border: none
+        outline: none
+      &:focus
+        border: none
+        outline: none
+      &-active
+        transform: rotate(180deg)
+        background-image: url(../img/button-next.svg)
     &_next
       right: 290px
       width: 56px
       height: 56px
-      background-image: url(../img/button-next.svg)
+      transform: rotate(180deg)
+      background-image: url(../img/button-prev.svg)
+      background-repeat: no-repeat
+      &-active
+        transform: rotate(360deg)
+        background-image: url(../img/button-next.svg)
+      &:active
+        border: none
+        outline: none
+      &:focus
+        border: none
+        outline: none

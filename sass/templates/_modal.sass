@@ -17,6 +17,12 @@
     align-items: center
   &__close
     align-self: flex-end
+    &:active
+      border: none
+      outline: none
+    &:focus
+      border: none
+      outline: none
   &__list
     display: flex
     width: 100%
@@ -41,3 +47,77 @@
       left: 0
       z-index: 49
       background-color: transparent
+  &-logIn
+    display: none
+    position: fixed
+    top: 5px
+    left: 5px
+    right: 5px
+    z-index: 50
+    background-color: transparent
+    &_visible
+      display: block
+      width: 40%
+      height: 280px
+      margin: auto
+    &__block
+      display: flex
+      height: 100%
+      padding: 20px 13px 34px 22px
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+      background-color: $secondary
+      border-radius: 10px
+      overflow-y: auto
+      &::-webkit-scrollbar
+        width: 4px
+        height: 4px
+        background-color: $secondary
+      &::-webkit-scrollbar-thumb
+        border-radius: 2px
+        background-color: $main
+
+    &__close
+      align-self: flex-end
+      &:active
+        border: none
+        outline: none
+      &:focus
+        border: none
+        outline: none
+    &__login
+      margin: 0
+      margin-bottom: 12px
+    &__text
+      display: block
+      color: $light-text
+      padding: 9px 100px
+      border: 2px solid $light-text
+      margin-top: 50px
+    &__bg
+      display: none
+      &_closed
+        display: block
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        z-index: 49
+        background-color: rgba($secondary, 0.5)
+    &__form
+      display: flex
+      flex-direction: column
+      width: 50%
+    &__email
+      height: 40px
+      border-radius: 6px
+      border: none
+      outline: none
+    &__name
+      height: 40px
+      border-radius: 6px
+      border: none
+      outline: none
+      margin-top: 20px
