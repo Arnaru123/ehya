@@ -1353,7 +1353,8 @@ a {
 }
 
 .error {
-  color: #183B56;
+  color: red;
+  margin-bottom: 20px;
 }
 
 .footer__wrapper {
@@ -1615,6 +1616,7 @@ a {
 
 .modal-logIn__email {
   height: 40px;
+  padding-left: 20px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   border: none;
@@ -1623,6 +1625,7 @@ a {
 
 .modal-logIn__name {
   height: 40px;
+  padding-left: 20px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   border: none;
@@ -2108,6 +2111,9 @@ a {
     text-align: center;
     margin-bottom: 56px;
   }
+  .error {
+    margin-bottom: 64px;
+  }
   .footer__wrapper {
     padding: 49px 0 50px 17px;
     -ms-grid-columns: 1fr;
@@ -2230,6 +2236,16 @@ a {
   .hero-bg::before {
     background-position-x: 55%;
     background-position-y: -352px;
+  }
+  .hero-bg::after {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 350px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30.34%, rgba(238, 238, 238, 0.0001)), color-stop(55%, #E8EAE9));
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
   }
   .hero__wrapper {
     padding: 0 0 8px;
@@ -2563,6 +2579,9 @@ a {
     right: 0;
     left: 0;
   }
+  .error {
+    margin-bottom: 64px;
+  }
   .footer__wrapper {
     padding: 49px 0 50px 17px;
     -ms-grid-columns: 1fr;
@@ -2683,6 +2702,16 @@ a {
   .hero-bg::before {
     background-position-x: 55%;
     background-position-y: -352px;
+  }
+  .hero-bg::after {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 350px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(30.34%, rgba(238, 238, 238, 0.0001)), color-stop(55%, #E8EAE9));
+    background: -webkit-linear-gradient(top, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
+    background: -o-linear-gradient(top, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%);
   }
   .hero__wrapper {
     padding: 0 0 8px;
@@ -3010,6 +3039,9 @@ a {
     top: 58px;
     right: 0;
     left: 0;
+  }
+  .error {
+    margin-bottom: 64px;
   }
   .footer__wrapper {
     padding: 54px 0 50px 22px;
