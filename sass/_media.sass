@@ -4,6 +4,8 @@
   .hero
     &-bg
       max-width: 95%
+      &::before
+        left: -353px
   .collection
     &__item
       flex-wrap: wrap
@@ -69,10 +71,10 @@
       width: 95%
       height: 624px
       &::before
-        background-position-x: -15%
-        background-position-y: -362px
+        background-position-x: -10%
+        background-position-y: -338px
     &__wrapper
-      padding: 0 0 30px
+      padding: 0 0 30px 6px
     &__subtitle
       margin-bottom: 26px
       font-size: 48px
@@ -95,14 +97,16 @@
       flex-wrap: wrap
       padding: 78px 0
     &__muse
+      grid-gap: 36px
       margin-right: 0
       margin-bottom: 34px
     &__content
       flex-basis: 99%
+      padding-left: 5px
     &__text
       margin-bottom: 22px
   .trending
-    padding-bottom: 38px
+    padding-bottom: 46px
     &-header
       flex-wrap: wrap
       justify-content: center
@@ -111,13 +115,13 @@
       justify-content: space-evenly
     &__card
       flex-basis: 43%
-      margin-bottom: 38px
+      margin-bottom: 42px
     &__img
       margin-bottom: 18px
   .tabs
     flex-basis: 100%
     justify-content: center
-    margin-top: 28px
+    margin-top: 20px
   .reviews
     &-slider
       width: 90%
@@ -149,6 +153,8 @@
     &-slider
       width: 100%
       padding-top: 34px
+      &__item
+        width: 684px
       &__description
         width: 92%
   .subscribe
@@ -158,9 +164,11 @@
     &__description
       text-align: center
       margin-bottom: 56px
-    .subscribe
-      &__home
-        justify-content: center
+    &__title
+      margin-bottom: 20px
+    &__home
+      align-items: center
+      justify-content: center
   .footer
     &__wrapper
       padding: 64px 0
@@ -189,7 +197,6 @@
   .modal
     &_visible
       display: block
-      height: 95%
     &__list
       height: 150px
       overflow-y: auto
@@ -223,7 +230,12 @@
       border-radius: unset
       &::before
         background-position-x: 0
-        background-position-y: -362px
+      &::after
+        right: 0
+        left: 0
+        bottom: 0
+        top: 350px
+        background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 30.34%, #E8EAE9 55%)
     &__wrapper
       padding: 0 0 30px
     &__subtitle
@@ -311,6 +323,9 @@
     &__description
       text-align: center
       margin-bottom: 56px
+    &__home
+      align-items: center
+      justify-content: center
   .error
     margin-bottom: 64px
   .footer
@@ -362,7 +377,6 @@
   .modal
     &_visible
       display: block
-      height: 95%
     &__list
       height: 150px
       overflow-y: auto
@@ -396,7 +410,6 @@
       border-radius: unset
       &::before
         background-position-x: 55%
-        background-position-y: -352px
       &::after
         right: 0
         left: 0
@@ -479,20 +492,6 @@
     &__card
       width: 48%
       margin-bottom: 22px
-      &:nth-child(1) .trending__img
-        background-image: url(../img/trends-m-1.jpg)
-      &:nth-child(2) .trending__img
-        background-image: url(../img/trends-m-2.jpg)
-      &:nth-child(3) .trending__img
-        background-image: url(../img/trends-m-3.jpg)
-      &:nth-child(4) .trending__img
-        background-image: url(../img/trends-m-4.jpg)
-      &:nth-child(5) .trending__img
-        background-image: url(../img/trends-m-5.jpg)
-      &:nth-child(6) .trending__img
-        background-image: url(../img/trends-m-6.jpg)
-      &:nth-child(7) .trending__img
-        background-image: url(../img/trends-m-7.jpg)
       &_description
         padding-top: 22px
       &_more
@@ -627,6 +626,9 @@
       top: 58px
       right: 0
       left: 0
+    &__home
+      align-items: center
+      justify-content: center
   .error
     margin-bottom: 64px
   .footer
@@ -710,7 +712,6 @@
       border-radius: unset
       &::before
         background-position-x: 55%
-        background-position-y: -352px
       &::after
         right: 0
         left: 0
@@ -797,6 +798,20 @@
     &__card
       width: 48%
       margin-bottom: 22px
+      &:nth-child(1) .trending__img
+        background-image: url(../img/trends-m-1.jpg)
+      &:nth-child(2) .trending__img
+        background-image: url(../img/trends-m-2.jpg)
+      &:nth-child(3) .trending__img
+        background-image: url(../img/trends-m-3.jpg)
+      &:nth-child(4) .trending__img
+        background-image: url(../img/trends-m-4.jpg)
+      &:nth-child(5) .trending__img
+        background-image: url(../img/trends-m-5.jpg)
+      &:nth-child(6) .trending__img
+        background-image: url(../img/trends-m-6.jpg)
+      &:nth-child(7) .trending__img
+        background-image: url(../img/trends-m-7.jpg)
       &_description
         padding-top: 22px
       &_more
@@ -939,6 +954,9 @@
       top: 58px
       right: 0
       left: 0
+    &__home
+      align-items: center
+      justify-content: center
   .error
     margin-bottom: 64px
   .footer
