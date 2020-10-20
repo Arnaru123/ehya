@@ -1058,6 +1058,10 @@ a {
   background-color: #183B56;
 }
 
+.reviews__pagination {
+  cursor: pointer;
+}
+
 .story {
   padding: 80px 0 140px;
 }
@@ -1169,7 +1173,7 @@ a {
           justify-content: space-between;
   width: 95%;
   height: 178px;
-  padding: 20px 40px 20px 6px;
+  padding: 20px 40px 20px 16px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1871,9 +1875,9 @@ label.subscribe__error {
             justify-content: space-evenly;
   }
   .trending__card {
-    -webkit-flex-basis: 43%;
-        -ms-flex-preferred-size: 43%;
-            flex-basis: 43%;
+    -webkit-flex-basis: 41%;
+        -ms-flex-preferred-size: 41%;
+            flex-basis: 41%;
     margin-bottom: 42px;
   }
   .trending__img {
@@ -1939,7 +1943,8 @@ label.subscribe__error {
     width: 684px;
   }
   .story-slider__description {
-    width: 92%;
+    width: 96%;
+    padding: 20px 44px 20px 16px;
   }
   .subscribe__wrapper {
     -webkit-box-orient: vertical;
@@ -2004,10 +2009,6 @@ label.subscribe__error {
   }
   .modal_visible {
     display: block;
-  }
-  .modal__list {
-    height: 150px;
-    overflow-y: auto;
   }
   .modal__bg_closed {
     display: block;
@@ -2288,10 +2289,6 @@ label.subscribe__error {
   }
   .modal_visible {
     display: block;
-  }
-  .modal__list {
-    height: 150px;
-    overflow-y: auto;
   }
   .modal__bg_closed {
     display: block;
