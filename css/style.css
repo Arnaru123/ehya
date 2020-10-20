@@ -471,9 +471,18 @@ a {
   position: fixed;
   right: 3%;
   bottom: 50px;
+  z-index: 150;
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+
+.button-up__icon {
+  padding: 5px;
+  border: 1px solid #FFFFFF;
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  background-color: #FFFFFF;
 }
 
 .error {
