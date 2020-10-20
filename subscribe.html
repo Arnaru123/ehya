@@ -171,12 +171,12 @@
   <div class="modal-logIn">
     <div class="modal-logIn__block">
       <a href="#" class="modal-logIn__close"><img src="img/modal-close.svg" alt="Закрыть"></a>
-      <form action="#" class="modal-logIn__form" name="user-login">
+      <form action="send.php" method="POST" class="modal-logIn__form" name="username">
         <input type="email" class="modal-logIn__email" placeholder="Ваш Emaill" name="email" required />
         <input type="text" class="modal-logIn__name" placeholder="Ваш логин" name="username" minlength="4" required />
+        <button class="user-login modal-logIn__login"><span
+            class="link user-login__text modal-logIn__text">Войти</span></button>
       </form>
-      <a href="#" class="user-login modal-logIn__login"><span
-          class="link user-login__text modal-logIn__text">Войти</span></a>
     </div>
     <!-- /.modal-login__block -->
   </div>

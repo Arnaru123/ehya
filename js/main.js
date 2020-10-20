@@ -15,9 +15,9 @@ $(document).ready(function () {
   direction: 'horizontal',
   loop: true,
   autoHeight: true,  
-  // autoplay: {
-  //   delay: 7000,
-  //   },
+  autoplay: {
+    delay: 7000,
+    },
   pagination: {
     el: '.reviews__pagination',
     bulletClass: "reviews__bullet",
@@ -26,12 +26,12 @@ $(document).ready(function () {
     },  
   });
 
-  // $(".reviews-slider").mouseenter(function() {
-  //   reviewsSlider.autoplay.stop();    
-  // });
-  // $(".reviews-slider").mouseleave(function() {
-  //   reviewsSlider.autoplay.start();    
-  // });
+  $(".reviews-slider").mouseenter(function() {
+    reviewsSlider.autoplay.stop();    
+  });
+  $(".reviews-slider").mouseleave(function() {
+    reviewsSlider.autoplay.start();    
+  });
   // слайдер историй
   var storySlider = new Swiper(".story-slider", {    
     loop: true,
