@@ -102,7 +102,7 @@ $(document).ready(function () {
   });
   // валидатор форм
   $('.subscribe__form').validate({
-      errorClass: "error",
+      errorClass: "subscribe__error",
       messages: {        
         subscribe: {
           required: "укажите почту",
