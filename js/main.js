@@ -14,7 +14,7 @@ $(document).ready(function () {
   var reviewsSlider = new Swiper('.reviews-slider', {  
   direction: 'horizontal',
   loop: true,
-  autoHeight: true,
+  autoHeight: true,  
   autoplay: {
     delay: 7000,
     },
@@ -22,6 +22,7 @@ $(document).ready(function () {
     el: '.reviews__pagination',
     bulletClass: "reviews__bullet",
     bulletActiveClass: "reviews__bullet_active",
+    clickable: true,    
     },  
   });
 
