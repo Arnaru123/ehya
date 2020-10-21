@@ -40,14 +40,14 @@ try {
 
 // Настройки вашей почты
 $mail->Host = 'smtp.gmail.com'; // SMTP сервера вашей почты
-$mail->Username = 'solotag9@gmail.com'; // Логин на почте
-$mail->Password = 'FeranirFRNR123'; // Пароль на почте
+$mail->Username = ''; // Логин на почте
+$mail->Password = ''; // Пароль на почте
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
-$mail->setFrom('solotag9@gmail.com', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
+$mail->setFrom('', ''); // Адрес самой почты и имя отправителя
 
 // Получатель письма
-$mail->addAddress('Di17000@mail.ru');  
+$mail->addAddress('');  
 
     
 // Отправка сообщения
